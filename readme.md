@@ -21,7 +21,21 @@ googleimagesdownload -k "barbie" -o "barbieswomen" --format jpg --usage_rights l
 
 Examine the images and remove incorrect images. I removed all paintings and images that were not clearly women or barbies. I also removed images that contained both women and barbies, since the model is forced to choose between one or the other classification.
 
-After removing inappropriate images, run
+Use imagemagick to resize images for easier uploading and processing:
+
+```
+cd women
+convert -resize '640' *.jpg woman.jpg
+```
+You will now see your original files and new files titled `woman-n.jpg` in the same directory. If you are happy with the resizing delete, the originals and convert the other directory of images.
+
+If you are sure the resize is exactly as you need, you can also use mogrify instead of convert to resize and replace your originals:
+
+```
+mogrify -resize '640' *.jpg woman.jpg
+```
+
+Make the train and valid datasets/directory structure:
 
 ```
 make_train_valid.py barbieswomen --train .80 --valid .20
