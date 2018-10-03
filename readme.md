@@ -2,7 +2,11 @@ A dataset and Jupyter notebook for exploring Lesson 1 of the Fast.ai Deep Learni
 
 @semih suggested classifying photos of barbies vs. women: http://forums.fast.ai/t/wiki-lesson-1/9398/
 
-barbieswomen.zip contains training and validation data set up using the folder structure required for fast.ai. I created the dataset using two python scripts:
+barbieswomen.zip contains training and validation data set up using the folder structure required for fast.ai. Unzip this and then launch the notebook lesson1-barbies-women
+
+The Barbie and Women Import Notebook contains sample code for creating the dataset.
+
+I created the dataset using two python scripts:
 
 googleimagesdownload: https://github.com/hardikvasa/google-images-download
 
