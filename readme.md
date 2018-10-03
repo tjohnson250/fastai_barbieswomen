@@ -1,18 +1,20 @@
-A dataset and Jupyter notebook for exploring Lesson 1 of the Fast.ai Deep Learning 1 course using barbies vs. women, instead of the original Kaggle Dogs and Cats dataset.
+A dataset and Jupyter notebook for exploring Lesson 1 of the Fast.ai Deep Learning 1 course using barbies vs. women, instead of the original Kaggle Dogs and Cats dataset. This is verty small dataset, so it is difficult to get stable results. However, I can usually get 90% plus and sometimes find weights that give 96% on the validation set.
 
 @semih suggested classifying photos of barbies vs. women: http://forums.fast.ai/t/wiki-lesson-1/9398/
 
-barbieswomen.zip contains training and validation data set up using the folder structure required for fast.ai. Unzip this and then launch the notebook lesson1-barbies-women
+`barbieswomen.zip` contains training and validation data set up using the folder structure required for fast.ai. 
 
-The Barbie and Women Import Notebook contains sample code for creating the dataset.
+To use this with the version of fast.ai used in the courses, it best to clone this repo and then move the notebooks into one of the course folders, then unzip the datafile and move it the `train` and `valid` directories into the courses `data` folder.
+
+The `Barbie and Women Import` Notebook contains sample code for creating the dataset.
 
 I created the dataset using two python scripts:
 
-googleimagesdownload: https://github.com/hardikvasa/google-images-download
+`googleimagesdownload`: https://github.com/hardikvasa/google-images-download
 
 You can install this using `pip install google-images-download`
 
-make_train_valid.py from https://github.com/prairie-guy/ai_utilities
+`make_train_valid.py` from https://github.com/prairie-guy/ai_utilities
 
 `googleimagesdownload` requires a machine with a chrome browser and the appropriate chromedriver (see the googleimagesdownload GitHub repo for instructions). Otherwise, you are limited to 100 images.
 
